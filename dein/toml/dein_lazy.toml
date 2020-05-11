@@ -1,7 +1,4 @@
 [[plugins]]
-repo = 'itchyny/lightline.vim'
-
-[[plugins]]
 repo = 'Shougo/deoplete.nvim'
 # depends = [ 'nvim-yarp', 'vim-hug-neovim-rpc' ]
 # enable if not using nvim
