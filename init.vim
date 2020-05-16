@@ -68,7 +68,8 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 "completeopt を消した
 set completeopt-=preview
 
-:autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
+:autocmd BufNewFile *.cpp 0r $HOME/.config/nvim/templates/skeleton.cpp
+:autocmd BufNewFile *.tex 0r $HOME/.config/nvim/templates/skeleton.tex
 
 " dein setting
 if &compatible
