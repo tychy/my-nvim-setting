@@ -11,6 +11,7 @@
 \newcommand{\pdergx}[2][]{\pderx[g_{#1}]{#2}}
 \newcommand{\half}{\frac{1}{2}}
 \newcommand{\hfpt}{\hspace{5pt}}
+\newcommand{\ddfrac}[2]{\frac{{#1}^2}{{#2}^2}}
 \newcommand{\beq}{\begin{equation}}
 \newcommand{\beql}[1]{\begin{equation}\label{#1}}
 \newcommand{\eeq}{\end{equation}}
@@ -21,6 +22,7 @@
 \newcommand{\Christfinside}[3]{\pdergx[#1 #3]{#2} + \pdergx[#3 #2]{#1} - \pdergx[#1 #2]{#3}}
 \newcommand{\Christf}[4]{\Gamma^{#1}_{#2 #3}=\half g^{#1 #4}(\Christfinside{#2}{#3}{#4})}
 \newcommand{\Ricchiinside}[2]{\pder[\Gamma^l_{#1 #2}]{x^l} - \pder[\Gamma^l_{#1 l}]{x^{#2}} 
+    + \GaT{l}{#1}{#2}\GaT{m}{l}{m} - \GaT{m}{#1}{l}\GaT{l}{#2}{m}}
 \date{\today}
 \author{山田龍}
 \title{this is title}
