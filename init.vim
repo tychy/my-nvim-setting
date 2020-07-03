@@ -70,6 +70,7 @@ set completeopt-=preview
 
 :autocmd BufNewFile *.cpp 0r $HOME/.config/nvim/templates/skeleton.cpp
 :autocmd BufNewFile *.tex 0r $HOME/.config/nvim/templates/skeleton.tex
+:autocmd BufNewFile *.markdown 0r $HOME/.config/nvim/templates/skeleton.markdown
 
 " dein setting
 if &compatible
