@@ -19,7 +19,7 @@
 \newcommand{\eeqc}{\;\;\;,\end{equation}}
 \newcommand{\GaT}[3]{\Gamma^{#1}_{#2 #3}}
 \newcommand{\pderGaTx}[4]{\pderx[\GaT{#1}{#2}{#3}]{#4}}
-\newcommand{\Christfinside}[3]{\pdergx[#1 #3]{#2} + \pdergx[#3 #2]{#1} - \pdergx[#1 #2]{#3}}
+\newcommand{\Christfinside}[3]{\pdergx[#3 #1]{#2} + \pdergx[#2 #3]{#1} - \pdergx[#1 #2]{#3}}
 \newcommand{\Christf}[4]{\Gamma^{#1}_{#2 #3}=\half g^{#1 #4}(\Christfinside{#2}{#3}{#4})}
 \newcommand{\Ricchiinside}[2]{\pder[\Gamma^l_{#1 #2}]{x^l} - \pder[\Gamma^l_{#1 l}]{x^{#2}} 
     + \GaT{l}{#1}{#2}\GaT{m}{l}{m} - \GaT{m}{#1}{l}\GaT{l}{#2}{m}}
