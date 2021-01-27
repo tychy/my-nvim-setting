@@ -7,3 +7,9 @@ repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo   = 'Shougo/unite.vim'
+
+[[plugins]]
+repo   = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo   = 'tpope/vim-fugitive'
