@@ -1,9 +1,4 @@
-#include <iostream>
-#include <string>
-#include <map>
-#include <vector>
-#include <algorithm>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
 #define ll long long
 #define rep(i,n) for(int (i)=0;(i)<(n);(i)++)
