@@ -10,10 +10,10 @@ let g:deoplete#enable_at_startup = 1
 
 [[plugins]]
 repo = 'zchee/deoplete-clang'
-hook_source = '''
-let g:deoplete#sources#clang#libclang_path = '/usr/lib/libclang.so.10'
-let g:deoplete#sources#clang#clang_header = '/usr/include/clang'
-'''
+#hook_source = '''
+#let g:deoplete#sources#clang#libclang_path = $LIB_CLANG
+#let g:deoplete#sources#clang#clang_header = $DIR_CLANG
+#'''
 on_ft = ['c', 'cpp', 'cmake']
 depends = ['deoplete.nvim']
 
