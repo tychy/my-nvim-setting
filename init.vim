@@ -71,6 +71,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 set completeopt-=preview
 
 :autocmd BufNewFile *.cpp 0r $HOME/.config/nvim/templates/skeleton.cpp
+:autocmd BufNewFile *.py 0r $HOME/.config/nvim/templates/skeleton.py
 :autocmd BufNewFile *.tex 0r $HOME/.config/nvim/templates/skeleton.tex
 :autocmd BufNewFile *.markdown 0r $HOME/.config/nvim/templates/skeleton.markdown
 
