@@ -121,12 +121,12 @@ if dein#check_install()
 endif
 "vim-fugitive
 nnoremap <leader>ga :Git add %:p<CR><CR>
-nnoremap <leader>gc :Gcommit<CR><CR>
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gp :Gpush<CR>
-nnoremap <leader>gd :Gdiff<CR>
-nnoremap <leader>gl :Glog<CR>
-nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gc :Git commit<CR><CR>
+nnoremap <leader>gs :Git status<CR>
+nnoremap <leader>gp :Git push<CR>
+nnoremap <leader>gd :Git diff<CR>
+nnoremap <leader>gl :Git log<CR>
+nnoremap <leader>gb :Git blame<CR>
 
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
