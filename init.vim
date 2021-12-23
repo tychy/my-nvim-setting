@@ -1,8 +1,7 @@
 set fenc=utf-8
-" バックアップファイルを作らない
-set nobackup
-" スワップファイルを作らない
+
 set noswapfile
+
 " 編集中のファイルが変更されたら自動で読み直す
 set autoread
 " バッファが編集中でもその他のファイルを開けるように
@@ -39,6 +38,10 @@ syntax enable
 " escをjjにバインド
 inoremap <silent> jj <ESC>
 
+" dont yank when x
+vnoremap x "_x
+nnoremap x "_x
+
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
 set list listchars=tab:\▸\-
@@ -49,6 +52,13 @@ set tabstop=4
 " 行頭でのTab文字の表示幅
 set shiftwidth=4
 
+" window
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+nnoremap ss :<C-u>sp<CR><C-w>j
+nnoremap sv :<C-u>vs<CR><C-w>l
 
 
 " 検索系
@@ -98,6 +108,11 @@ if dein#load_state($HOME . '/.config/nvim/dein')
 " clang path
 let g:deoplete#sources#clang#libclang_path = $LIB_CLANG
 let g:deoplete#sources#clang#clang_header = $DIR_CLANG
+
+let $FZF_DEFAULT_OPTS="--height 30% --border"
+let $FZF_DEFAULT_COMMAN="rg --files --hidden --glob '!.git/**'"
+
+
  " TOML を読み込み、キャッシュしておく
  call dein#load_toml(s:toml,      {'lazy': 0})
  call dein#load_toml(s:lazy_toml, {'lazy': 1})

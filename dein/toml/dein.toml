@@ -23,3 +23,45 @@ nnoremap <leader>gd :Git diff<CR>
 nnoremap <leader>gl :Git log<CR>
 nnoremap <leader>gb :Git blame<CR>
 '''
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+hook_add = '''
+vnoremap ? :'<,'>TComment<CR>
+'''
+
+[[plugins]]
+repo = 'luochen1990/rainbow'
+hook_add = '''
+    let g:rainbow_active=1
+'''
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'simeji/winresizer'
+
+# fzf
+[[plugins]]
+repo = 'junegunn/fzf'
+hook_post_update = './install --all'
+merged = 0
+
+# fzf.vim
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+hook_add = '''
+    nnoremap <C-g> :Rg<Space>
+    nnoremap <C-p> :GFiles<CR>
+    nnoremap <C-h> :History
+'''
+
+# memo
+[[plugins]]
+repo = 'glidenote/memolist.vim'
+hook_add = '''
+    let g:memolist_path="$HOME/memo"
+'''
+
