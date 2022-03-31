@@ -2,6 +2,7 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# ステータスラインを好みの形式にカスタマイズする
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 
@@ -24,12 +25,13 @@ nnoremap <leader>gl :Git log<CR>
 nnoremap <leader>gb :Git blame<CR>
 '''
 
+# gc でコメントをトグルできる
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
 hook_add = '''
 vnoremap ? :'<,'>TComment<CR>
 '''
-
+# カッコをカラフルにしてくれる
 [[plugins]]
 repo = 'luochen1990/rainbow'
 hook_add = '''
@@ -39,6 +41,7 @@ hook_add = '''
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
+# ctrl + Eでリサイズできる
 [[plugins]]
 repo = 'simeji/winresizer'
 
